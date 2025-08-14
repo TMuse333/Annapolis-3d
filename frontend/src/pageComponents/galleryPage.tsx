@@ -2,11 +2,12 @@
 
 import CarouselGrid from "@/components/gridCarousel/gridCarousel";
 import React from "react";
-import { galleryImages } from "@/data/galleryPage";
+import { galleryImages,products } from "@/data/galleryPage";
 import ServiceHerobanner from "@/components/serviceHero/serviceHero";
 import bg from '../../public/print-popup.jpg'
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
+import Product from "@/components/product/product";
 const GalleryPage = () => {
 
 
@@ -16,16 +17,26 @@ const GalleryPage = () => {
             currentPage="Gallery"
             />
             <ServiceHerobanner
-            title="Our gallery"
-            description="Checkout our favourite pieces"
+            title="All of our products"
+            description="Here you can see all of our current products and gallery some of our best work"
             src={bg.src}
             alt="alt"
             />
+           
 
-                    <CarouselGrid
+                   
+
+<div className="grid grid-cols-1 gap-8 p-8">
+      {products.map((prod, i) => (
+        <Product key={i} {...prod} />
+      ))}
+    </div>
+
+    <CarouselGrid
                     images={galleryImages}
                     isMobile={false}
                     />
+
 
                     <Footer/>
 

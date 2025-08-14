@@ -134,7 +134,7 @@ export const introProps:ExperienceCardProps = {
   };
 
   export const contactCloserData = {
-    imageSrc: "/placeholder.webp",
+    imageSrc: "/logo.jpg",
     imageAlt: "Placeholder Image",
     headline: "Get in Touch With Us",
     paragraph:
