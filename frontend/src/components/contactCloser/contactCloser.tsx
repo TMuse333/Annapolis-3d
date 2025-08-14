@@ -73,16 +73,16 @@ const ContactCloser: React.FC<ContactCloserProps> = ({
       placeholder: "Your Phone Number",
       required: true,
     },
+    // {
+    //   name: "intention",
+    //   type: "text",
+    //   placeholder: "Are you looking to buy, sell, or something else?",
+    //   required: true,
+    // },
     {
-      name: "intention",
-      type: "text",
-      placeholder: "Are you looking to buy, sell, or something else?",
-      required: true,
-    },
-    {
-      name: "extras",
+      name: "Message",
       type: "textarea",
-      placeholder: "Let us know any extra details about your situation.",
+      placeholder: "Your message",
       required: true,
     },
   ];
